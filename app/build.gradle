@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'bopihui'
+            keyPassword 'chp1234'
+            storeFile file('F:/bopihui.jks')
+            storePassword 'chp1234'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.wzsykj.wuyaojiu"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+    }
+}
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+    maven { url "https://jitpack.io" }
+}
+def FRESCO_VERSION = '0.10.0+'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'com.android.support:support-v4:23.4.0'
+    //multidex
+    //retrofit
+    //rxjava
+    //okhttp
+    //MaterialDesign
+    //tablayout
+    //imageslider
+    //materialish-progress
+    //picasso
+    //友盟
+    compile project(':wuyaojiu_um_library')
+    compile project(':wuyaojiu_um_push_library')
+    //swipebacklayout
+    //datetimepicker
+    //BaiduLBS_Android
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/xUtils-3.1.22.jar')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile project(path: ':citypickerview')
+    compile files('libs/zxing.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.lzy.net:okhttputils:1.5.2'
+    compile 'com.lzy.net:okhttpserver:0.1.7'
+    compile 'com.github.vajro:MaterialDesignLibrary:1.6'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'me.yokeyword:fragmentation:0.10.2'
+}

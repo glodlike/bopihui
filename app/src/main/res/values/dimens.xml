@@ -1,0 +1,46 @@
+<resources>
+    <dimen name="font_size_s">10sp</dimen>
+    <dimen name="font_size_ss">11sp</dimen>
+    <dimen name="font_size_x">12sp</dimen>
+    <dimen name="font_size_xx">13sp</dimen>
+    <dimen name="font_size_m">14sp</dimen>
+    <dimen name="font_size_mm">15sp</dimen>
+    <dimen name="font_size_l">16sp</dimen>
+    <dimen name="font_size_ll">17sp</dimen>
+    <dimen name="font_size_xl">18sp</dimen>
+    <dimen name="font_size_xll">19sp</dimen>
+
+
+    <dimen name="bar_item_size">50dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- recycler -->
+    <dimen name="dp_066">0.66dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
+
+    <dimen name="tag_corner_radius">10.0dip</dimen>
+    <dimen name="tag_horizontal_spacing">8.0dip</dimen>
+    <dimen name="tag_vertical_spacing">6.0dip</dimen>
+    <dimen name="common_margin">20.0dip</dimen>
+    <dimen name="common_margin_10">20.0dip</dimen>
+</resources>

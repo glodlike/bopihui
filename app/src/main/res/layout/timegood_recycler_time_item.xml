@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="限时抢购"
+            android:textColor="@color/colorFour"
+            android:textSize="@dimen/font_size_mm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/yuanjiao_6_gray_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离结束:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_m"
+                android:textStyle="bold" />
+
+            <iwgang.view.countdownview.CountdownView
+                android:layout_marginTop="1dp"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/clearColor"
+                app:isShowDay="true"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isSuffixTextBold="true"
+                app:isTimeTextBold="true"
+                app:suffixDay="天"
+                app:suffixGravity="center"
+                app:suffixHour="时"
+                app:suffixMillisecond="毫秒"
+                app:suffixMinute="分"
+                app:suffixSecond="秒"
+                app:suffixTextColor="@color/white"
+                app:suffixTextSize="@dimen/font_size_s"
+                app:timeTextColor="@color/white"
+                app:timeTextSize="@dimen/font_size_m" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/line_h_10dp_view" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="收货人:朱子涵"
+                android:textColor="@color/colorFour"
+                android:textSize="@dimen/font_size_m" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorFour"
+                android:text="13634146852"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorThree"
+            android:text="温州市 鹿城区 牛山北路50号"
+            android:paddingLeft="15dp"
+            />
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/deflute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/address_6_clear_border_1_black_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:text="设为默认"
+            android:textColor="@color/colorThree"
+            android:textSize="12sp" />
+
+         <ImageView
+                   android:layout_centerVertical="true"
+                   android:id="@+id/edit"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/edit_icon"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="60dp"
+                 />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/delect_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

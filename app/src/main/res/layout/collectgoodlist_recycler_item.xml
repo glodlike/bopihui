@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/line_h_1px_view" />
+
+        <TextView
+            android:ellipsize="end"
+            android:lines="2"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="name"
+            android:textColor="@color/colorFour"
+            android:textSize="@dimen/font_size_m" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="price"
+                android:textColor="@color/colorOne"
+                android:textSize="@dimen/font_size_m" />
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/delect_icon"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

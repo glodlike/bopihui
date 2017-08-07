@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/eeblack" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_l" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/zhijiao_white_2px_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="查看全部"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_l" />
+    </FrameLayout>
+    <zhy.view.flowlayout.TagFlowLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        zhy:auto_select_effect="true"
+        zhy:max_select="1" />
+
+
+
+
+</LinearLayout>

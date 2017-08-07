@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_logo"
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="53°茅台迎宾酒500ml"
+                    android:textColor="@color/colorFour"
+                    android:textSize="@dimen/font_size_m" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥998"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorFour"
+                    android:textSize="@dimen/font_size_m" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="酒精度：43%vol、 规格：500ml"
+                    android:textColor="@color/colorThree"
+                    android:textSize="@dimen/font_size_xx" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x10"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/colorThree"
+                    android:textSize="@dimen/font_size_m" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- <LinearLayout
+         android:paddingBottom="5dp"
+         android:paddingTop="5dp"
+         android:background="@color/white"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_marginLeft="15dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:text="评分"
+             android:layout_gravity="center_vertical"
+             />
+
+         <com.wzsykj.bopihui.widget.RatingBarView
+             android:layout_marginLeft="10dp"
+             android:id="@+id/custom_ratingbar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:starCount="5"
+             app:starEmpty="@drawable/staroff"
+             app:starFill="@drawable/staron"
+             app:starImageSize="50dp"/>
+     </LinearLayout>
+     <EditText
+         android:layout_marginTop="0.2dp"
+         android:id="@+id/content"
+         android:textSize="@dimen/font_size_x"
+         android:textColor="@color/colorThree"
+         android:gravity="left"
+         android:paddingLeft= "5dp"
+         android:paddingTop = "5dp"
+         android:hint="点击输入您的评论，最多140字"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+         android:layout_height="100dp" />-->
+</LinearLayout>

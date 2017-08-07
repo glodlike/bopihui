@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- checked -->
+    <item android:drawable="@mipmap/user_loging_show_mm_1" android:state_checked="true" />
+    <!-- default -->
+    <item android:drawable="@mipmap/user_loging_show_mm_0" android:state_checked="false" />
+
+</selector>

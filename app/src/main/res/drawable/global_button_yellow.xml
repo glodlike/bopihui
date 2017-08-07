@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--  res/drawable/rounded_edittext.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:padding="10dp"
+            android:shape="rectangle">
+            <solid android:color="#FFECEFF1" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:padding="10dp"
+            android:shape="rectangle">
+            <solid android:color="#ACFDD835" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:padding="10dp"
+            android:shape="rectangle">
+            <solid android:color="#ACFDD835" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新城大道吾吆酒"
+            android:textColor="@color/colorFour"
+            android:textSize="@dimen/font_size_l" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="0577-85191919"
+            android:textColor="@color/colorFour"
+            android:textSize="@dimen/font_size_m" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/phoneImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/phone_black_icon" />
+</LinearLayout>

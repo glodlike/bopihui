@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <View
+       android:id="@+id/line"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="@color/colorLine"
+       />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爆款推荐"
+            android:textColor="@color/colorFour"
+            android:textSize="@dimen/font_size_mm" />
+    </LinearLayout>
+
+    <include layout="@layout/line_h_1px_view" />
+
+   <!-- <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp" />
+
+
+</LinearLayout>

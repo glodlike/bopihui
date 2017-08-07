@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yuanjiao_white_2px_bg"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="8dp"
+    android:textColor="@drawable/type_flowlayout_tag_textcolor_1"
+    android:textSize="@dimen/font_size_l" />
